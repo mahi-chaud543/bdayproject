@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18 Reasons You're Amazing</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background: #0b1f4d;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.8;
+            margin-bottom: 50px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(5px);
+
+            padding: 25px;
+            margin: 20px 0;
+
+            border-radius: 20px;
+
+            transition: 0.3s;
+
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #8ec5ff;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 30px;
+
+            padding: 15px 25px;
+
+            border: none;
+            border-radius: 12px;
+
+            background: #4d8cff;
+            color: white;
+
+            font-size: 1rem;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        #message {
+            margin-top: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 60px;
+            opacity: 0.8;
+        }
+
+        /* Floating Ghost */
+
+        .ghost {
+            position: fixed;
+
+            bottom: 20px;
+            right: 20px;
+
+            width: 90px;
+
+            image-rendering: pixelated;
+
+            animation: float 3s ease-in-out infinite;
+
+            cursor: pointer;
+
+            z-index: 1000;
+        }
+
+        .ghost-big {
+            width: 180px;
+            image-rendering: pixelated;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- FLOATING GHOST -->
+
+    <img src="ghost.gif"
+         class="ghost"
+         onclick="ghostMessage()">
+
+    <h1>18 Reasons You're Amazing</h1>
+
+    <p class="subtitle">
+        Happy 18th Birthday 💙
+    </p>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="number">1</div>
+            <h2>Reason #1</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">2</div>
+            <h2>Reason #2</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">3</div>
+            <h2>Reason #3</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">4</div>
+            <h2>Reason #4</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">5</div>
+            <h2>Reason #5</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">6</div>
+            <h2>Reason #6</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">7</div>
+            <h2>Reason #7</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">8</div>
+            <h2>Reason #8</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">9</div>
+            <h2>Reason #9</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">10</div>
+            <h2>Reason #10</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">11</div>
+            <h2>Reason #11</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">12</div>
+            <h2>Reason #12</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">13</div>
+            <h2>Reason #13</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">14</div>
+            <h2>Reason #14</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">15</div>
+            <h2>Reason #15</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">16</div>
+            <h2>Reason #16</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+            <div class="number">17</div>
+            <h2>Reason #17</h2>
+            <p>Write your reason here.</p>
+        </div>
+
+        <div class="card">
+
+            <img src="ghost.gif" class="ghost-big">
+
+            <div class="number">18</div>
+
+            <h2>The Final Reason</h2>
+
+            <p>
+                Because life is simply better with you in it.
+            </p>
+
+        </div>
+
+    </div>
+
+    <button onclick="birthdayMessage()">
+        Click Me :)
+    </button>
+
+    <div id="message"></div>
+
+    <div class="footer">
+        Made with lots of appreciation 💙
+    </div>
+
+    <script>
+
+        function birthdayMessage() {
+            document.getElementById("message").innerHTML =
+                "🎉 Happy 18th Birthday! 🎉";
+        }
+
+        function ghostMessage() {
+
+            const messages = [
+
+                "boo 👻",
+
+                "you found me",
+
+                "still haunting this website",
+
+                "professional emotional support ghost",
+
+                "it is i, bob the ghost",
+
+                "i've been here the whole time"
+
+            ];
+
+            const random =
+                Math.floor(Math.random() * messages.length);
+
+            alert(messages[random]);
+        }
+
+    </script>
+
+</body>
+
+</html>
