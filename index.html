@@ -49,10 +49,16 @@
             transition: 0.3s;
 
             border: 1px solid rgba(255,255,255,0.1);
+            cursor: pointer;
         }
 
         .card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card:active {
+            transform: translateY(-2px);
         }
 
         .number {
@@ -268,7 +274,7 @@
             <h2>The Final Reason</h2>
 
             <p>
-                Because life is simply better with you in it.
+                Because life is simply better with you in it. You matter, and are important.
             </p>
 
         </div>
@@ -315,6 +321,19 @@
 
             alert(messages[random]);
         }
+
+        function makeReasonsClickable() {
+            document.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const title = card.querySelector('h2')?.textContent || 'Reason';
+                    const reason = card.querySelector('p')?.textContent || '';
+
+                    document.getElementById('message').textContent = `${title}: ${reason}`;
+                });
+            });
+        }
+
+        makeReasonsClickable();
 
     </script>
 
