@@ -40,14 +40,10 @@
         .card {
             background: rgba(255,255,255,0.08);
             backdrop-filter: blur(5px);
-
             padding: 25px;
             margin: 20px 0;
-
             border-radius: 20px;
-
             transition: 0.3s;
-
             border: 1px solid rgba(255,255,255,0.1);
             cursor: pointer;
         }
@@ -59,6 +55,31 @@
 
         .card:active {
             transform: translateY(-2px);
+        }
+
+        .card p {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease;
+            margin-top: 0;
+        }
+
+        .card.revealed p {
+            max-height: 200px;
+            opacity: 1;
+            margin-top: 10px;
+        }
+
+        .card .hint {
+            font-size: 0.9rem;
+            opacity: 0.6;
+            font-style: italic;
+            transition: 0.3s;
+        }
+
+        .card.revealed .hint {
+            display: none;
         }
 
         .number {
@@ -73,19 +94,13 @@
 
         button {
             margin-top: 30px;
-
             padding: 15px 25px;
-
             border: none;
             border-radius: 12px;
-
             background: #4d8cff;
             color: white;
-
             font-size: 1rem;
-
             cursor: pointer;
-
             transition: 0.3s;
         }
 
@@ -104,22 +119,23 @@
             opacity: 0.8;
         }
 
+        .footer .resource {
+            display: block;
+            margin-top: 12px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
         /* Floating Ghost */
 
         .ghost {
             position: fixed;
-
             bottom: 20px;
             right: 20px;
-
             width: 90px;
-
             image-rendering: pixelated;
-
             animation: float 3s ease-in-out infinite;
-
             cursor: pointer;
-
             z-index: 1000;
         }
 
@@ -130,18 +146,9 @@
         }
 
         @keyframes float {
-
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-12px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+            100% { transform: translateY(0px); }
         }
 
     </style>
@@ -150,10 +157,9 @@
 <body>
 
     <!-- FLOATING GHOST -->
-
-        <img src="https://mahi-chaud543.github.io/bdayproject/ghost.gif"
-            class="ghost"
-            onclick="ghostMessage()">
+    <img src="https://mahi-chaud543.github.io/bdayproject/ghost.gif"
+        class="ghost"
+        onclick="ghostMessage()">
 
     <h1>18 Reasons To Stay Alive </h1>
 
@@ -166,117 +172,129 @@
         <div class="card">
             <div class="number">1</div>
             <h2>Reason #1</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to play some OW2, it's fun to play with you.</p>
         </div>
 
         <div class="card">
             <div class="number">2</div>
             <h2>Reason #2</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to continue being kind to everyone around you.</p>
         </div>
 
         <div class="card">
             <div class="number">3</div>
             <h2>Reason #3</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to experience all the amazing things life has to offer.</p>
         </div>
 
         <div class="card">
             <div class="number">4</div>
             <h2>Reason #4</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive because Eileen would miss Bob.</p>
         </div>
 
         <div class="card">
             <div class="number">5</div>
             <h2>Reason #5</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to receive another flower from Gary.</p>
         </div>
 
         <div class="card">
             <div class="number">6</div>
             <h2>Reason #6</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to build some more fun combat robots</p>
         </div>
 
         <div class="card">
             <div class="number">7</div>
             <h2>Reason #7</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to continue being yourself, and making others smile</p>
         </div>
 
         <div class="card">
             <div class="number">8</div>
             <h2>Reason #8</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to inspire others with your story</p>
         </div>
 
         <div class="card">
             <div class="number">9</div>
             <h2>Reason #9</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to go see LP live one day.</p>
         </div>
 
         <div class="card">
             <div class="number">10</div>
             <h2>Reason #10</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive to make another funny joke</p>
         </div>
 
         <div class="card">
             <div class="number">11</div>
             <h2>Reason #11</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive because people would miss you.</p>
         </div>
 
         <div class="card">
             <div class="number">12</div>
             <h2>Reason #12</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive because you are fun to talk to.</p>
         </div>
 
         <div class="card">
             <div class="number">13</div>
             <h2>Reason #13</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>You are someone who deserves a lot of effort and care</p>
         </div>
 
         <div class="card">
             <div class="number">14</div>
             <h2>Reason #14</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive for the future version of yourself 5 years from now</p>
         </div>
 
         <div class="card">
             <div class="number">15</div>
             <h2>Reason #15</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>Stay alive because you are loved and cared for by many.</p>
         </div>
 
         <div class="card">
             <div class="number">16</div>
             <h2>Reason #16</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>You are a wonderful brother, friend, and human being.</p>
         </div>
 
         <div class="card">
             <div class="number">17</div>
             <h2>Reason #17</h2>
+            <div class="hint">Click to reveal 💙</div>
             <p>YOU, matter. your story matters and your presence is needed</p>
         </div>
 
-        <div class="card">
-
+        <div class="card revealed">
             <img src="https://mahi-chaud543.github.io/bdayproject/ghost.gif" class="ghost-big">
-
             <div class="number">18</div>
-
             <h2>The Final Reason</h2>
-
             <p>
                 Because the world is simply better with you in it. Stay, one more day every single day.
             </p>
-
         </div>
 
     </div>
@@ -288,7 +306,10 @@
     <div id="message"></div>
 
     <div class="footer">
-         🦋 
+         🦋
+        <span class="resource">
+            If things ever feel like too much: 988 (call or text) — Suicide &amp; Crisis Lifeline, available 24/7.
+        </span>
     </div>
 
     <script>
@@ -299,36 +320,30 @@
         }
 
         function ghostMessage() {
-
             const messages = [
-
                 "boo 👻",
-
                 "you found me",
-
                 "still haunting this website",
-
                 "professional emotional support ghost",
-
                 "it is i, bob the ghost",
-
                 "i've been here the whole time"
-
             ];
-
-            const random =
-                Math.floor(Math.random() * messages.length);
-
+            const random = Math.floor(Math.random() * messages.length);
             alert(messages[random]);
         }
 
         function makeReasonsClickable() {
             document.querySelectorAll('.card').forEach(card => {
-                card.addEventListener('click', () => {
-                    const title = card.querySelector('h2')?.textContent || 'Reason';
-                    const reason = card.querySelector('p')?.textContent || '';
+                card.setAttribute('tabindex', '0');
 
-                    document.getElementById('message').textContent = `${title}: ${reason}`;
+                card.addEventListener('click', () => {
+                    card.classList.toggle('revealed');
+                });
+
+                card.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        card.classList.toggle('revealed');
+                    }
                 });
             });
         }
